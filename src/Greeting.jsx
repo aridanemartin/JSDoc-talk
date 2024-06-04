@@ -5,13 +5,14 @@ import { calculateCoordinates } from "./helpers/calculateCoordinates";
  * A simple greeting component.
  * @param {object} props - The component props.
  * @param {string} props.name - The name to greet.
- * @param {string} [props.isDoctor] - The doctor to greet (Optional).
  * @param {string} [props.surname] - The surname to greet (Optional).
+ * @param {string} [props.isDoctor] - True if
+ * he/she is a Doctor (Optional).
  * @returns {JSX.Element} The rendered component.
  *
  * @example
  * //Example usage of Greeting component
- * <Greeting name="John" surname="Doe" />
+ * <Greeting name="John" surname="Doe" isDoctor={false} />
  */
 function Greeting({ name, surname, isDoctor }) {
   const doctorTag = isDoctor ? "Dr. " : "";

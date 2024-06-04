@@ -8,7 +8,7 @@ import { calculateCoordinates } from "./helpers/calculateCoordinates";
  *
  * @example
  * // Example usage of Farewell component
- * <Farewell name="John" surname="Doe" />
+ * <Farewell name="John" surname="Doe" isDoctor={false} />
  */
 function Farewell({ name, surname, isDoctor }) {
   const doctorTag = isDoctor ? "Dr. " : "";
